@@ -65,7 +65,6 @@ public class CalculatorServisParameterTest {
     }
 
 
-
     @ParameterizedTest
     @MethodSource("podelitNegativTestParams")
     public void podelitNegativTest(int a,int b ){

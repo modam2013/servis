@@ -17,7 +17,6 @@ public class CalculatorServis {
             throw new DivByZeroException();
 
         }
-
         return (double)a/b;
     }
 
