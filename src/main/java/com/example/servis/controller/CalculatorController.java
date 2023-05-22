@@ -17,7 +17,6 @@ public class CalculatorController {
         public CalculatorController(CalculatorServis calculatorServis) {
         this.calculatorServis = calculatorServis;
     }
-
     @GetMapping(produces = MediaType.TEXT_HTML_VALUE)
     public String greetings() {
         return " <h1>Добро пожаловать в калькулятор!</h1>";

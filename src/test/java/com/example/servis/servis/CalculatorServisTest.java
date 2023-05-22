@@ -53,7 +53,6 @@ public class CalculatorServisTest{
     }
     @Test
     public void podelitNegativTest(){
-
         Assertions.assertThrows(DivByZeroException.class,()->calculatorServis.podelit(1,0));
         Assertions.assertThrows(DivByZeroException.class,()->calculatorServis.podelit(-1,0));
 

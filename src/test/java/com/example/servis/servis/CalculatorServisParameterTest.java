@@ -64,7 +64,6 @@ public class CalculatorServisParameterTest {
                 .isEqualTo(expected.doubleValue(), Offset.offset(0D));
     }
 
-
     @ParameterizedTest
     @MethodSource("podelitNegativTestParams")
     public void podelitNegativTest(int a,int b ){
