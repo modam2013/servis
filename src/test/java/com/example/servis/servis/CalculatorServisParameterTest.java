@@ -51,20 +51,21 @@ public class CalculatorServisParameterTest {
         Assertions.assertThat(calculatorServis.minus(a,b))
                 .isEqualTo(expected);
     }
-    @ParameterizedTest
-    @MethodSource("umnogitTestParams")
+     @ParameterizedTest
+     @MethodSource("umnogitTestParams")
     public void umnogitTest(int a,int b, int expected ){
         Assertions.assertThat(calculatorServis.umnogit(a,b))
                 .isEqualTo(expected);
     }
-    @ParameterizedTest
-    @MethodSource("podelitTestParams")
+
+     @ParameterizedTest
+     @MethodSource("podelitTestParams")
     public void podelitTest(int a,int b, Number expected ){
         Assertions.assertThat(calculatorServis.podelit(a,b).doubleValue())
                 .isEqualTo(expected.doubleValue(), Offset.offset(0D));
     }
-    @ParameterizedTest
-    @MethodSource("podelitNegativTestParams")
+     @ParameterizedTest
+     @MethodSource("podelitNegativTestParams")
     public void podelitNegativTest(int a,int b ){
         Assertions.assertThatExceptionOfType(DivByZeroException.class)
                 .isThrownBy(()->calculatorServis.podelit(a,b));

@@ -34,7 +34,7 @@ public class CalculatorController {
     }
 
 
-    @GetMapping("/minus")
+     @GetMapping("/minus")
     public String minus(@RequestParam(value = "num1", required = false) Integer a,
             @RequestParam(value = "num2", required = false) Integer b) {
         if (Objects.isNull(a) || Objects.isNull(b)) {
@@ -64,7 +64,7 @@ public class CalculatorController {
 
     }
 
-    private String buildResult(Number a, Number b, Number result, String operation) {
+     private String buildResult(Number a, Number b, Number result, String operation) {
         return String.format("%s %s %s=%s",a,operation,b,result);
     }
 }

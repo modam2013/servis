@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 import java.security.DigestException;
 
-public class CalculatorServisTest{
-    private final CalculatorServis calculatorServis=new CalculatorServis();
+ public class CalculatorServisTest{
+     private final CalculatorServis calculatorServis=new CalculatorServis();
     @Test
-    public void plusTest(){
+     public void plusTest(){
        Number actual=calculatorServis.plus(1,2) ;
        Number expected =3;
        Assertions.assertEquals(expected,actual);
@@ -20,8 +20,8 @@ public class CalculatorServisTest{
     }
 
 
-    @Test
-    public void minusTest(){
+     @Test
+     public void minusTest(){
         Number actual=calculatorServis.minus(1,2) ;
         Number expected =-1;
         Assertions.assertEquals(expected,actual);
@@ -51,8 +51,8 @@ public class CalculatorServisTest{
         Assertions.assertEquals(expected,actual);
 
     }
-    @Test
-    public void podelitNegativTest(){
+     @Test
+     public void podelitNegativTest(){
         Assertions.assertThrows(DivByZeroException.class,()->calculatorServis.podelit(1,0));
         Assertions.assertThrows(DivByZeroException.class,()->calculatorServis.podelit(-1,0));
 

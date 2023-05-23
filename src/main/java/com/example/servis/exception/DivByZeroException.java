@@ -1,4 +1,4 @@
 package com.example.servis.exception;
 
-public class DivByZeroException extends  IllegalArgumentException{
+   public class DivByZeroException  extends  IllegalArgumentException{
 }
